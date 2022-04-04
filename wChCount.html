@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <textarea name="text" onkeyup="textCount()" id="text" cols="30" rows="10"></textarea>
+    <p id="Count">hi</p>
+
+    <script>
+        function textCount() {
+            var w = document.getElementById('text').value;
+            var t = document.getElementById('text').value.length;
+            var g = w.trim();
+            var b = g.split(" ");
+            
+            var r = document.getElementById('Count').innerHTML = " " + "word " + b.length + " Character "+ t ;
+
+
+        }
+
+    </script>
+</body>
+
+</html>
